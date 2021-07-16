@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'drukwidebold2';
+  src: url('font/drukwidebold.ttf') format('truetype');
+}
+
+body {
+  background-color: black;
+}
+
+.contenuto {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.versogalleria {
+  width: 100%;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: drukwidebold2, sans-serif;
+  font-size: 17px;
+  color: white;
+  opacity: 0.6;
+}
+
+h1:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+/* posizione scritta cambia piu ingrandisce finestra*/
+@media (min-width: 768px) {
+  .contenuto {
+    margin-top: 8vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contenuto {
+    margin-top: 1vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contenuto {
+    margin-top: 0;
+  }
+
+  .versogalleria {
+    position: absolute;
+    bottom: 10vw;
+  }
+}
